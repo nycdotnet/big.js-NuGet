@@ -1,0 +1,25 @@
+{
+  "name": "big.js-NuGet",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Steve Ognibene <steve.ognibene@outlook.com>"
+  ],
+  "description": "NuGet package for big.js",
+  "keywords": [
+    "big.js",
+    "NuGet"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "big.js": "~2.5.1"
+  }
+}

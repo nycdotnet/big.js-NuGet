@@ -1,0 +1,23 @@
+{
+  "name": "big.js-NuGet",
+  "version": "1.0.0",
+  "description": "NuGet package for big.js (https://github.com/MikeMcl/big.js)",
+  "main": "index.js",
+  "scripts": {
+    "generate": "powershell .\\MakeTheNugetPackage.ps1"
+  },
+  "author": "Steve Ognibene",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "2.5.1"
+  },
+  "keywords": [
+    "decimal",
+    "js",
+    "big"
+  ],
+  "dependencies": {
+    "bower": "^1.3.9"
+  }
+}

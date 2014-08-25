@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>big.js</id>
+    <version>2.5.1</version>
+    <authors>Michael Mclaughlin</authors>
+    <owners>Steve Ognibene</owners>
+    <licenseUrl>https://github.com/MikeMcl/big.js/blob/master/LICENCE</licenseUrl>
+    <projectUrl>https://github.com/MikeMcl/big.js</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A small, fast, easy-to-use library for arbitrary-precision decimal arithmetic</description>
+    <releaseNotes>-2014-06-08 Amend README requires.</releaseNotes>
+    <tags>arbitrary precision arithmetic big number decimal float biginteger bigdecimal bignumber bigint bignum JavaScript big.js</tags>
+  </metadata>
+  <files>
+    <file src="Scripts\big.js" />
+    <file src="Scripts\big.min.js" />
+    <file src="Scripts\big.js.LICENCE" />
+  </files>
+</package>
