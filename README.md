@@ -9,6 +9,8 @@ Relies on node.js and also Bower being installed globally. (npm install -g bower
 
 Requires PowerShell.
 
-Should automatically fetch the latest version of big.js via bower, update the big.js.nuspec file, and compile the .nupkg file.
+Should automatically fetch the latest version of big.js via Bower, update the big.js.nuspec file, and compile the .nupkg file.
 
-If you ever have to manually edit the .nuspec file, run `nuget pack .\big.js.nuspec` to compile it as-is.
+If you ever have to manually edit the .nuspec file, run `nuget pack .\big.js.nuspec` to compile it as-is (otherwise the PowerShell script may overwrite your changes).
+
+You can then upload the .nupkg file to http://www.nuget.org.
