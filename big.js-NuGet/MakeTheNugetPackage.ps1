@@ -24,7 +24,7 @@ function warn-no-nuget() {
 function check-bower() {
   try
   {
-	  $result = bower --version | out-string
+	  $result = bower | out-string
 	  if ($result -eq $null -or $result -eq "") {
 		warn-no-bower
 	  }
