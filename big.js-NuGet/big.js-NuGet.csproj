@@ -60,7 +60,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="big.js.2.5.1.nupkg" />
     <Content Include="big.js.nuspec" />
     <Content Include="bower.json" />
     <Content Include="MakeTheNugetPackage.ps1" />
