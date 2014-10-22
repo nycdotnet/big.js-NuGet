@@ -24,9 +24,8 @@ function warn-no-nuget() {
 function check-bower() {
   try
   {
-	  $result = bower --version
-	  if ($result -eq $null) {
-		"Detect for Bower returned null.  I am not sure why this happens sometimes.  Try again."
+	  $result = bower --version | out-string
+	  if ($result -eq $null -or $result -eq "") {
 		warn-no-bower
 	  }
 	  "Bower detected."
