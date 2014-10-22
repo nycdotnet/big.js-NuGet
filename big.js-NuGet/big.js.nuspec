@@ -2,6 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>big.js</id>
+    <title>big.js</title>
     <version>2.5.1</version>
     <authors>Michael Mclaughlin</authors>
     <owners>Steve Ognibene</owners>
