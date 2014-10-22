@@ -63,15 +63,19 @@ function get-package-info() {
 }
 
 function create-scripts-folder-and-copy-scripts-there() {
-	if ([IO.Directory]::Exists(".\Scripts") -eq $false) {
+    if ([IO.Directory]::Exists(".\Content") -eq $false) {
+		"Creating 'Content' folder"
+		mkdir .\Content | Out-Null
+	}
+	if ([IO.Directory]::Exists(".\Content\Scripts") -eq $false) {
 		"Creating 'Scripts' folder"
-		mkdir .\Scripts | Out-Null
+		mkdir .\Content\Scripts | Out-Null
 	}
 	"Setting up Scripts folder"
 	del .\Scripts\*.* | Out-Null
-	[IO.File]::Copy("bower_components\big.js\big.js", "Scripts\big.js", $true);
-	[IO.File]::Copy("bower_components\big.js\big.min.js", "Scripts\big.min.js", $true);
-	[IO.File]::Copy("bower_components\big.js\LICENCE", "Scripts\big.js.LICENCE", $true);
+	[IO.File]::Copy("bower_components\big.js\big.js", "Content\Scripts\big.js", $true);
+	[IO.File]::Copy("bower_components\big.js\big.min.js", "Content\Scripts\big.min.js", $true);
+	[IO.File]::Copy("bower_components\big.js\LICENCE", "Content\Scripts\big.js.LICENCE", $true);
 }
 
 function compile-nuget-package() {
